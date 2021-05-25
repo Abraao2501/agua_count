@@ -1,2 +1,2 @@
-# agua_count
- Contador de copos de água
+# Contador de Copos de Água
+ Aplicação Web baseado em Javascript
