@@ -1,0 +1,21 @@
+section.principal {
+    margin-top: 2rem;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    position: relative;
+}
+section.principal p.click {
+    position: absolute;
+    left: 5rem;
+    top: 18rem;
+
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #56596A;
+
+    width: 17rem;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+
+.close1 {
+    display: block;
+    z-index: 10000;
+}
+.line1,
+.line2,
+.line3 {
+    display: none;
+}
+.menu-container {
+    width: 50vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    background: #3696EF;
+
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2), 0px 11px 15px rgba(0, 0, 0, 0.14), 0px 4px 20px rgba(0, 0, 0, 0.12);
+
+    z-index: 100;
+
+    transform: translateX(100rem);
+    transition: .5s;
+
+}
+.menu-container a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+
+    text-decoration: none;
+    text-align: center;
+
+    margin-top: 10rem;
+}
+.menu-container-visible{
+    z-index: 100;
+
+    transform: translateX(0);
+    transition: .5s;
+}

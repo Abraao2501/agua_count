@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--icone-->
+    <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+
+    <!--Mudando a cor do navegador mobile-->
+    <meta name="theme-color" content="#3696EF" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3696EF" />
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/bar.css" />
+    <link rel="stylesheet" href="/css/image.css" />
+    <link rel="stylesheet" href="/css/principal.css" />
+    <link rel="stylesheet" href="/css/geral.css" />
+    <link rel="stylesheet" href="/css/history-card.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/poupop.css" />
+
+    <!--Titulo-->
+    <title>Water Count</title>
+  </head>
+  <body>
+    <div class="bg-transparent">
+      <section class="poupop-container">
+        <p>Indique uma meta diária de copos bebidos por dia</p>
+        <img src="/agua pequena.png" alt="" />
+        <input
+          type="number"
+          class="input"
+          autofocus
+          placeholder="Digite aqui..."
+          required
+        />
+        <button class="poupopButton">Enviar</button>
+      </section>
+    </div>
+
+    <header>
+      <div class="header--menu">
+        <div class="header--menu--line1"></div>
+        <div class="header--menu__line2"></div>
+        <div class="header--menu--line3"></div>
+      </div>
+    </header>
+    <section class="menu-container">
+      <a class="pdfButton">
+        <img src="/codicon_history.svg" alt="" />
+        Gerar PDF com dados</a
+      >
+    </section>
+    <main>
+      <audio src="/WhatsApp Audio 2021-05-20 at 16 (mp3cut.net).mp3"></audio>
+      <section class="bar">
+        <p class="meta">Meta Diária</p>
+        <p class="after">0</p>
+        <div class="bar-line-gray"></div>
+        <p class="before">10</p>
+        <div class="progress">
+          <div class="bar-line-blue"></div>
+        </div>
+        <p class="count"></p>
+      </section>
+
+      <section class="principal">
+        <img
+          src="/agua 1.svg"
+          class="add"
+          alt="Copo de água"
+          style="cursor: pointer"
+        />
+        <p class="click">Clique no copo para confirmar que você bebeu água</p>
+        <div class="local-history">
+          <section class="history"></section>
+        </div>
+      </section>
+
+      <!--Imagem para pdf-->
+      <img src="/agua-1.jpg" style="display: none" class="agua" />
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
+      integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/script.js"></script>
+    <script src="/menu.js"></script>
+  </body>
+</html>
